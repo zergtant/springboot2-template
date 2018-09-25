@@ -1,6 +1,10 @@
 # springboot2 项目模板
 springboot2的项目模板
 ## 说明
+
+### 安装说明
+idea需要安装 lombok插件
+
 ### 结构
 ```
 /pom.xml
@@ -23,10 +27,13 @@ restful接口文档： swagger2
 
 解析JSON：jackson
 
+减少重复代码的书写 ：lombok
+
 ## 打包
 mvn clean package
 
 ## 后续计划
+1. 增加Actuator 监控 
 1. 增加grpc的service层
 1. 增加shrio身份认证
 1. Scala 语言支持

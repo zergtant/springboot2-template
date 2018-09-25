@@ -18,7 +18,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @SpringBootApplication
 @MapperScan("tant.template.dao")
-@ComponentScan("tant.template")
+@ComponentScan(basePackages = {"tant.template.service","tant.template.controller"})
 @Slf4j
 public class App  {
     public static void main(String[] args) {
