@@ -11,11 +11,12 @@
         <module>util</module>
         <module>controller</module>
         <module>web</module>
+        <module>adminUI</module>
     </modules>
     <groupId>tant.template</groupId>
     <artifactId>parent</artifactId>
     <version>0.1-SNAPSHOT</version>
-    <name>spring boot  2.0 模板</name>
+    <name>spring boot 2.0 模板</name>
     <description>spring boot web 项目模板，使用pebble作为模板引擎，阿里druid链接池</description>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -83,7 +84,10 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.7.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>

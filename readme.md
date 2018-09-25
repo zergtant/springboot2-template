@@ -15,6 +15,7 @@ idea需要安装 lombok插件
 /service 业务
 /controller  控制器
 /web
+/adminUI springboot2 adminUI
 ```
 ### 引用
 将默认servlet容器改为jetty
@@ -29,11 +30,14 @@ restful接口文档： swagger2
 
 减少重复代码的书写 ：lombok
 
+服务状态检查 ： Actuator
+
 ## 打包
 mvn clean package
 
 ## 后续计划
-1. 增加Actuator 监控 
+1. Actuator监控增加身份认证
+1. 全局错误捕获
 1. 增加grpc的service层
 1. 增加shrio身份认证
 1. Scala 语言支持
